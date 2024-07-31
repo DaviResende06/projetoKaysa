@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -38,12 +37,10 @@ i {
   from {
     transform: translateY(0) scale(1);
   }
-
   to {
     transform: translateY(-8px) scale(1.1);
   }
 }
-
 .header-button {
   border: 1px solid #fff;
   padding: 8px 24px;
@@ -74,22 +71,18 @@ i {
     align-items: center;
     justify-tracks: center;
   }
-
   .header-content i {
     margin-top: 16px;
     font-size: 34px;
   }
-
   .header-logo img {
     width: 160px;
     margin-top: 46px;
   }
-
   .header-button {
     display: none;
   }
 }
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -125,14 +118,12 @@ i {
   justify-content: center;
   padding: 14px;
 }
-
 .hero h1 {
   text-align: center;
   line-height: 150%;
   max-height: 940px;
   font-size: 48px;
 }
-
 .hero p {
   text-align: center;
   margin: 14px 0;
@@ -156,46 +147,38 @@ i {
   from {
     transform: scale(1);
   }
-
   to {
     transform: scale(1.07);
   }
 }
-
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 60vh;
   }
-
   .hero h1 {
     font-size: 34px;
     padding: 0 14px;
     width: 100%;
   }
-
   .hero p {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 29px;
   }
 }
-
 @media screen and (max-width: 340px) {
   .hero h1 {
     font-size: 26px;
   }
 }
-
 @media screen and (max-width: 310px) {
   .hero h1 {
     font-size: 25px;
   }
 }
-
 .services {
   background-color: #d2bfb8;
   color: #232224;
@@ -239,14 +222,12 @@ i {
   font-size: 22px;
   padding: 13px;
 }
-
 .services-etapa p {
   margin-bottom: 12px;
   text-align: justify;
   /* Alinha o texto justificado para melhorar a aparência */
   line-height: 110%;
 }
-
 .services-etapa .titulo-etapa {
   font-family: "El Messiri", sans-serif;
   font-optical-sizing: auto;
@@ -259,7 +240,6 @@ i {
   color: #102947;
   line-height: 120%;
 }
-
 .services-etapa .titulo-etapa-end {
   margin-bottom: 15px;
 }
@@ -271,20 +251,16 @@ i {
     margin-bottom: 15px;
     line-height: 100%;
   }
-
   .services-content p {
     font-size: 20px;
   }
-
   .services-etapa p {
     font-size: 19px;
   }
-
   .services-etapa .titulo-etapa {
     line-height: 100%;
   }
 }
-
 .container-etapa {
   align-items: center;
 }
@@ -378,71 +354,58 @@ i {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
   }
-
   .haircuts {
     display: flex;
   }
-
   .services-etapa .titulo-etapa {
     font-size: 39px;
   }
-
   .services-content h2 {
     font-size: 45px;
   }
 }
-
 @media screen and (max-width: 750px) {
   .haircuts {
     flex-direction: column;
   }
-
   .haircut {
     margin-bottom: 3%;
   }
 }
-
 @media screen and (max-width: 580px) {
   .haircuts .haircut {
     max-height: 310px;
     max-width: 2600px;
   }
 }
-
 @media screen and (max-width: 550px) {
   .haircuts .haircut {
     max-height: 320px;
     max-width: 280px;
   }
 }
-
 @media (max-width: 500px) {
   .haircuts {
     padding: 0%;
   }
 }
-
 @media (max-width: 420px) {
   .services-content h2 {
     font-size: 38px;
   }
-
   .services-content p {
     font-size: 19px;
     line-height: 110%;
   }
-
   .services-etapa p {
     font-size: 19px;
     line-height: 100%;
   }
 }
-
 .espacoAbaixoDeServices {
   visibility: hidden;
   height: 20px;
@@ -466,7 +429,6 @@ i {
   gap: 10px;
   padding: 0px 100px 70px 150px;
 }
-
 .about-content img {
   max-width: 450px;
   max-height: 700px;
@@ -482,13 +444,12 @@ i {
 .about-description {
   text-align: center;
 }
-
 .about-description h2 {
   font-size: 55px;
   margin-top: 20px;
   margin-bottom: 30px;
   -webkit-text-decoration: solid;
-  text-decoration: solid;
+          text-decoration: solid;
   text-align: center;
   font-family: "Didact Gothic", sans-serif;
   font-weight: 900;
@@ -496,14 +457,12 @@ i {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #c09c64;
 }
-
 .about-description p {
   line-height: 150%;
   font-size: 20px;
   padding: 10px;
   margin-bottom: 30px;
 }
-
 .about-description a {
   background-color: #d94140;
   padding: 10px 15px;
@@ -513,7 +472,6 @@ i {
   border-radius: 3px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .about-description a:hover {
   background-color: rgb(214, 22, 22);
   font-size: 19px;
@@ -524,95 +482,77 @@ i {
     line-height: 120%;
     padding: 0px;
   }
-
   .about-description h2 {
     line-height: 115%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 }
-
 @media (max-width: 1050px) {
   .about-content {
     padding: 0px 100px 20px 30px;
   }
-
   .about-description h2 {
     font-size: 47px;
   }
-
   .about-description p {
     font-size: 18px;
   }
 }
-
 @media (max-width: 768px) {
   .about-content {
     padding: 0px 40px 50px 40px;
   }
-
   .about-content img {
     width: 390px;
     height: 600px;
   }
-
   .about-content p {
     font-size: 19px;
   }
-
   .about-description h2 {
     font-size: 50px;
   }
-
   .about-description p {
     font-size: 18px;
   }
 }
-
 @media (max-width: 590px) {
   .about-description h2 {
     font-size: 45px;
   }
 }
-
 @media (max-width: 540px) {
   .about-description h2 {
     font-size: 42px;
   }
 }
-
 @media (max-width: 530px) {
   .about-content {
     padding: 0px 30px 50px 30px;
   }
-
   .about-content img {
     width: 340px;
     height: 520px;
   }
-
   .about-description h2 {
     font-size: 46px;
   }
-
   .about-description p {
     font-size: 18px;
   }
 }
-
 @media (max-width: 440px) {
   .about-content p {
     line-height: 120%;
     padding: 0px;
   }
-
   .about-description h2 {
     line-height: 115%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 }
-
 .sobre-a-clinica {
   border-top: 5px solid white;
   position: relative;
@@ -634,7 +574,6 @@ i {
   /* Adiciona espaço entre texto e vídeo em telas menores */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .sobre-a-clinica-texto .p1 {
   font-size: 58px;
   font-family: "Merriweather", serif;
@@ -643,7 +582,6 @@ i {
   letter-spacing: -0.06em;
   color: #102947;
 }
-
 .sobre-a-clinica-texto .p2 {
   font-size: 30px;
   margin-bottom: 15px;
@@ -676,104 +614,85 @@ i {
   .sobre-a-clinica {
     padding: 10px;
   }
-
   .sobre-a-clinica-texto {
     margin: 10px 0px 10px 0px;
   }
-
   .sobre-a-clinica-texto .p1 {
     line-height: 110%;
     margin-bottom: 5px;
   }
-
   .sobre-a-clinica-texto .p2 {
     line-height: 105%;
     font-size: 10px;
   }
 }
-
 /* Media Queries */
 @media (max-width: 1200px) {
   .sobre-a-clinica-texto .p1 {
     font-size: 49px;
   }
-
   .sobre-a-clinica-texto .p2 {
     font-size: 32px;
   }
 }
-
 @media (max-width: 1200px) {
   .area-video iframe {
     max-width: 680px;
     height: 410px;
   }
 }
-
 @media (max-width: 992px) {
   .area-video iframe {
     max-width: 600px;
     height: 370px;
   }
 }
-
 @media (max-width: 768px) {
   .sobre-a-clinica {
     flex-direction: column;
   }
-
   .area-video iframe {
     height: 350px;
   }
-
   .sobre-a-clinica-texto h2 {
     margin-top: 30px;
   }
 }
-
 @media (max-width: 650px) {
   .sobre-a-clinica {
     flex-direction: column;
   }
-
   .area-video iframe {
     height: 300px;
   }
 }
-
 @media (max-width: 576px) {
   .area-video iframe {
     height: 290px;
   }
 }
-
 @media (max-width: 470px) {
   .sobre-a-clinica {
     padding: 10px;
   }
-
   .sobre-a-clinica-texto {
     margin: 15px 0px 15px 0px;
   }
-
   .sobre-a-clinica-texto .p1 {
     line-height: 110%;
     margin-bottom: 10px;
     font-size: 40px;
   }
-
   .sobre-a-clinica-texto .p2 {
     line-height: 105%;
     font-size: 22px;
   }
 }
-
 @media (max-width: 380px) {
   .sobre-a-clinica-texto .p1 {
     font-size: 39px;
   }
 }
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -816,12 +735,10 @@ i {
   z-index: 99;
   padding: 8px;
 }
-
 .btn-whatsapp img {
   max-width: 60px;
   transition: transform 0.8s;
 }
-
 .btn-whatsapp img:hover {
   transform: scale(1.1);
 }
@@ -851,7 +768,6 @@ i {
     max-width: 60px;
   }
 }
-
 body {
   font-family: "Sora", serif;
   width: 100%;
@@ -876,6 +792,4 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
