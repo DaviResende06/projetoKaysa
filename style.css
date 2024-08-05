@@ -412,10 +412,19 @@ i {
 }
 
 .about {
-  background-image: url(../assets/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   color: white;
+}
+
+.about img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .espaco-topo-foto {
@@ -429,6 +438,7 @@ i {
   gap: 10px;
   padding: 0px 100px 70px 150px;
 }
+
 .about-content img {
   max-width: 450px;
   max-height: 700px;
@@ -444,6 +454,7 @@ i {
 .about-description {
   text-align: center;
 }
+
 .about-description h2 {
   font-size: 55px;
   margin-top: 20px;
@@ -457,14 +468,16 @@ i {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #c09c64;
 }
+
 .about-description p {
   line-height: 150%;
   font-size: 20px;
   padding: 10px;
   margin-bottom: 30px;
 }
+
 .about-description a {
-  background-color: #d94140;
+  background-color: red;
   padding: 10px 15px;
   font-size: 17px;
   font-weight: 600;
@@ -472,6 +485,7 @@ i {
   border-radius: 3px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .about-description a:hover {
   background-color: rgb(214, 22, 22);
   font-size: 19px;
@@ -506,9 +520,6 @@ i {
   .about-content img {
     width: 390px;
     height: 600px;
-  }
-  .about-content p {
-    font-size: 19px;
   }
   .about-description h2 {
     font-size: 50px;

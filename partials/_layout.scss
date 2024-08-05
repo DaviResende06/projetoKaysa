@@ -555,12 +555,25 @@
 
 //About --------------------
 
-.about {
-    background-image: url(../assets/background.jpg);
 
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+
+
+
+.about {
+    position: relative;
     color: white;
+}
+
+.about img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .espaco-topo-foto {
@@ -573,14 +586,14 @@
     justify-content: center;
     gap: 10px;
     padding: 0px 100px 70px 150px;
+}
 
-    img {
-        max-width: 450px;
-        max-height: 700px;
-        box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
-        padding-top: 0px;
-        border-radius: 10px;
-    }
+.about-content img {
+    max-width: 450px;
+    max-height: 700px;
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    padding-top: 0px;
+    border-radius: 10px;
 }
 
 .about-content div {
@@ -589,53 +602,44 @@
 
 .about-description {
     text-align: center;
-
-    h2 {
-        font-size: 55px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        text-decoration: solid;
-
-        text-align: center;
-        font-family: "Didact Gothic", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        // color: #102947;
-        // color: white;
-        color: #c09c64;
-
-    }
-
-    p {
-        line-height: 150%;
-        font-size: 20px;
-        padding: 10px;
-        margin-bottom: 30px;
-        // text-shadow: 1px 1px 3px white;
-
-    }
-
-    a {
-        background-color: $red-normal;
-        padding: 10px 15px;
-        font-size: 17px;
-        font-weight: 600;
-        color: white;
-        border-radius: 3px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    a:hover {
-        background-color: rgb(214, 22, 22);
-        font-size: 19px;
-    }
 }
 
-// media queries smarthphone
+.about-description h2 {
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: solid;
+    text-align: center;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #c09c64;
+}
+
+.about-description p {
+    line-height: 150%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.about-description a {
+    background-color: red;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-description a:hover {
+    background-color: rgb(214, 22, 22);
+    font-size: 19px;
+}
 
 @media (max-width: 415px) {
-
     .about-content p {
         line-height: 120%;
         padding: 0px;
@@ -649,92 +653,70 @@
 }
 
 @media (max-width: 1050px) {
-
     .about-content {
         padding: 0px 100px 20px 30px;
     }
 
-    .about-description {
-        h2 {
-            font-size: 47px;
-        }
+    .about-description h2 {
+        font-size: 47px;
+    }
 
-        p {
-            font-size: 18px;
-        }
+    .about-description p {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
-
     .about-content {
         padding: 0px 40px 50px 40px;
-
-        img {
-            width: 390px;
-            height: 600px;
-        }
-
-        p {
-            font-size: 19px;
-        }
     }
 
-    .about-description {
-        h2 {
-            font-size: 50px;
-        }
+    .about-content img {
+        width: 390px;
+        height: 600px;
+    }
 
-        p {
-            font-size: 18px;
-        }
+    .about-description h2 {
+        font-size: 50px;
+    }
+
+    .about-description p {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 590px) {
-    .about-description {
-        h2 {
-            font-size: 45px;
-        }
+    .about-description h2 {
+        font-size: 45px;
     }
 }
 
 @media (max-width: 540px) {
-    .about-description {
-        h2 {
-            font-size: 42px;
-        }
+    .about-description h2 {
+        font-size: 42px;
     }
 }
-
-// imagem da Dra.Kaysa
 
 @media (max-width: 530px) {
-
     .about-content {
         padding: 0px 30px 50px 30px;
-
-        img {
-            width: 340px;
-            height: 520px;
-        }
     }
 
-    .about-description {
-        h2 {
-            font-size: 46px;
-        }
+    .about-content img {
+        width: 340px;
+        height: 520px;
+    }
 
-        p {
-            font-size: 18px;
-        }
+    .about-description h2 {
+        font-size: 46px;
+    }
+
+    .about-description p {
+        font-size: 18px;
     }
 }
 
-// media queries smarthphone
-
 @media (max-width: 440px) {
-
     .about-content p {
         line-height: 120%;
         padding: 0px;
@@ -746,6 +728,225 @@
         margin-bottom: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .about {
+//     background-image: url(../assets/background.jpg);
+
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     color: white;
+// }
+
+// .espaco-topo-foto {
+//     visibility: hidden;
+// }
+
+// .about-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 10px;
+//     padding: 0px 100px 70px 150px;
+
+//     img {
+//         max-width: 450px;
+//         max-height: 700px;
+//         box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
+//         padding-top: 0px;
+//         border-radius: 10px;
+//     }
+// }
+
+// .about-content div {
+//     flex: 1;
+// }
+
+// .about-description {
+//     text-align: center;
+
+//     h2 {
+//         font-size: 55px;
+//         margin-top: 20px;
+//         margin-bottom: 30px;
+//         text-decoration: solid;
+
+//         text-align: center;
+//         font-family: "Didact Gothic", sans-serif;
+//         font-weight: 900;
+//         font-style: normal;
+//         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+//         // color: #102947;
+//         // color: white;
+//         color: #c09c64;
+
+//     }
+
+//     p {
+//         line-height: 150%;
+//         font-size: 20px;
+//         padding: 10px;
+//         margin-bottom: 30px;
+//         // text-shadow: 1px 1px 3px white;
+
+//     }
+
+//     a {
+//         background-color: $red-normal;
+//         padding: 10px 15px;
+//         font-size: 17px;
+//         font-weight: 600;
+//         color: white;
+//         border-radius: 3px;
+//         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+//     }
+
+//     a:hover {
+//         background-color: rgb(214, 22, 22);
+//         font-size: 19px;
+//     }
+// }
+
+// // media queries smarthphone
+
+// @media (max-width: 415px) {
+
+//     .about-content p {
+//         line-height: 120%;
+//         padding: 0px;
+//     }
+
+//     .about-description h2 {
+//         line-height: 115%;
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+// }
+
+// @media (max-width: 1050px) {
+
+//     .about-content {
+//         padding: 0px 100px 20px 30px;
+//     }
+
+//     .about-description {
+//         h2 {
+//             font-size: 47px;
+//         }
+
+//         p {
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+
+//     .about-content {
+//         padding: 0px 40px 50px 40px;
+
+//         img {
+//             width: 390px;
+//             height: 600px;
+//         }
+
+//         p {
+//             font-size: 19px;
+//         }
+//     }
+
+//     .about-description {
+//         h2 {
+//             font-size: 50px;
+//         }
+
+//         p {
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+// @media (max-width: 590px) {
+//     .about-description {
+//         h2 {
+//             font-size: 45px;
+//         }
+//     }
+// }
+
+// @media (max-width: 540px) {
+//     .about-description {
+//         h2 {
+//             font-size: 42px;
+//         }
+//     }
+// }
+
+// // imagem da Dra.Kaysa
+
+// @media (max-width: 530px) {
+
+//     .about-content {
+//         padding: 0px 30px 50px 30px;
+
+//         img {
+//             width: 340px;
+//             height: 520px;
+//         }
+//     }
+
+//     .about-description {
+//         h2 {
+//             font-size: 46px;
+//         }
+
+//         p {
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+// // media queries smarthphone
+
+// @media (max-width: 440px) {
+
+//     .about-content p {
+//         line-height: 120%;
+//         padding: 0px;
+//     }
+
+//     .about-description h2 {
+//         line-height: 115%;
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+// }
 
 //                 --------     AREA SOBRE A CLINICA - VIDEO     -----------
 
