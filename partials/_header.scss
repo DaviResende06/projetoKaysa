@@ -17,11 +17,9 @@ i {
     gap: 20px;
 }
 
-.header-icons a:hover {
-    i {
-        animation: translateY 0.8s infinite alternate;
-        color: $red-light;
-    }
+.header-icons a:hover i {
+    animation: translateY 0.8s infinite alternate;
+    color: $red-light;
 }
 
 @keyframes translateY {
@@ -31,7 +29,6 @@ i {
 
     to {
         transform: translateY(-8px) scale(1.1);
-
     }
 }
 
@@ -55,7 +52,7 @@ i {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 20px; //     tem com ocolocar a logo no centro
+    margin-left: 20px; // tem como colocar a logo no centro
 }
 
 @media screen and (max-width: 768px) {
@@ -64,11 +61,11 @@ i {
         flex-direction: column;
         align-items: center;
         justify-tracks: center;
+    }
 
-        i {
-            margin-top: 16px;
-            font-size: 34px;
-        }
+    .header-content i {
+        margin-top: 16px;
+        font-size: 34px;
     }
 
     .header-logo img {
@@ -80,3 +77,176 @@ i {
         display: none;
     }
 }
+
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-height: 940px;
+        font-size: 48px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact {
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// header {
+//     width: 100%;
+// }
+
+// .header-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// i {
+//     color: $white-normal;
+// }
+
+// .header-icons {
+//     display: flex;
+//     gap: 20px;
+// }
+
+// .header-icons a:hover {
+//     i {
+//         animation: translateY 0.8s infinite alternate;
+//         color: $red-light;
+//     }
+// }
+
+// @keyframes translateY {
+//     from {
+//         transform: translateY(0) scale(1);
+//     }
+
+//     to {
+//         transform: translateY(-8px) scale(1.1);
+
+//     }
+// }
+
+// .header-button {
+//     border: 1px solid $white-normal;
+//     padding: 8px 24px;
+//     border-radius: 6px;
+//     color: $white-normal;
+//     background-color: transparent;
+//     transition: background-color 0.8s;
+// }
+
+// .header-button:hover {
+//     border: 1px solid $red-light;
+//     background-color: $red-light;
+// }
+
+// .header-logo {
+//     display: flex;
+//     visibility: hidden;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 50px;
+//     margin-left: 20px; //     tem com ocolocar a logo no centro
+//     margin-bottom: 130px;
+// }
+
+// @media screen and (max-width: 768px) {
+//     .header-content {
+//         width: 100%;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-tracks: center;
+
+//         i {
+//             margin-top: 16px;
+//             font-size: 34px;
+//         }
+//     }
+
+//     .header-logo img {
+//         width: 160px;
+//         margin-top: 46px;
+//     }
+
+//     .header-button {
+//         display: none;
+//     }
+// }
