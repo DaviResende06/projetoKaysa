@@ -614,7 +614,9 @@
     font-weight: 900;
     font-style: normal;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #c09c64;
+    // color: #c09c64;
+    color: #d89d3d;
+
 }
 
 .about-description p {
@@ -726,6 +728,20 @@
         line-height: 115%;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .about-content img {
+        width: 300px;
+        height: 480px;
+    }
+
+    .about-description h2 {
+        line-height: 115%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 43px;
     }
 }
 
