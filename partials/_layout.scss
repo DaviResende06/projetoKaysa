@@ -40,6 +40,7 @@ header {
 
 i {
     color: white;
+
 }
 
 .header-icons {
@@ -106,6 +107,7 @@ i {
 
     .header-button {
         display: none;
+        background-color: red;
     }
 }
 
@@ -117,6 +119,7 @@ i {
     align-items: center;
     justify-content: center;
     padding: 14px;
+
 }
 
 .hero h1 {
@@ -134,9 +137,8 @@ i {
 .button-contact {
     padding: 14px 28px;
     color: white;
-    // background-color: rgb(209, 45, 45);
-    background-color: black;
-    border: 0;
+    background-color: rgb(223, 53, 53);
+    border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
     margin: 14px 0;
@@ -534,8 +536,7 @@ i {
 }
 
 .about-description a {
-    background-color: black;
-    // background-color: black;
+    background-color: rgb(223, 53, 53);
     padding: 10px 15px;
     font-size: 17px;
     font-weight: 600;
