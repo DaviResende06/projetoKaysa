@@ -86,6 +86,8 @@ i {
     align-items: center;
     justify-content: center;
     padding: 14px;
+    position: relative;
+    z-index: 1;
 
     h1 {
         text-align: center;
