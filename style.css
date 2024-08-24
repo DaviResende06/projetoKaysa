@@ -338,15 +338,16 @@ i {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  padding-top: 30px;
 }
 
 .services-content h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 55px;
-  margin-top: 27px;
-  margin-bottom: 15px;
-  font-family: "El Messiri", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-family: "Didact Gothic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -356,7 +357,7 @@ i {
 
 .services-content p {
   line-height: 135%;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   text-align: center;
   max-width: 900px;
   font-size: 22px;
@@ -367,20 +368,19 @@ i {
 .services-etapa {
   color: #232224;
   margin: auto auto;
-  padding: 10px;
   max-width: 900px;
   /* Use max-width em vez de width para que o contêiner possa diminuir de tamanho em telas menores */
   font-size: 22px;
   padding: 13px;
 }
 .services-etapa p {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   text-align: justify;
   /* Alinha o texto justificado para melhorar a aparência */
   line-height: 110%;
 }
 .services-etapa .titulo-etapa {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Didact Gothic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 53px;
@@ -559,7 +559,7 @@ i {
 }
 .espacoAbaixoDeServices {
   visibility: hidden;
-  height: 20px;
+  padding: 20px;
 }
 
 .about {
@@ -580,6 +580,8 @@ i {
 
 .espaco-topo-foto {
   visibility: hidden;
+  color: white;
+  padding: 15px;
 }
 
 .about-content {
@@ -743,7 +745,7 @@ i {
   max-width: 800px;
   text-align: center;
   flex: 1;
-  margin: 50px 0px 35px 0px;
+  margin: 25px 0px 45px 0px;
   /* Adiciona espaço entre texto e vídeo em telas menores */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
