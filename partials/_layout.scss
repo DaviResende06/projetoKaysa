@@ -11,7 +11,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 0px;
 }
 
 .bg-home {
@@ -87,9 +87,9 @@ i {
     visibility: hidden;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 20px;
-    // margin-bottom: 100px;;
+    // margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -291,10 +291,12 @@ body {
 .section-heading {
     font-size: 3rem;
     color: #102947;
-    padding: 1rem 0;
-    padding: 1.5rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .text-lentesEmResina {
@@ -303,6 +305,8 @@ body {
     // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: black;
     font-size: 18px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
 }
 
 @media (max-width:450px) {
@@ -319,8 +323,8 @@ body {
     padding: 1rem 0;
     background-color: #d2bfb8;
     // background-color: white;
-    border-top: 1px solid white;
-    border-bottom: 2px solid white;
+    // border-top: 2px solid white;
+    // border-bottom: 2px solid white;
 }
 
 @media (max-width:1440px) {
@@ -339,6 +343,14 @@ body {
     #tranding .tranding-slider {
         height: 45rem;
     }
+
+    .section-heading {
+        font-size: 35px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        line-height: 100%;
+    }
+
 }
 
 @media (max-width:350px) {
@@ -351,6 +363,10 @@ body {
 
         /* Espaçamento entre os slides */
     }
+
+    .text-lentesEmResina {
+        padding-bottom: 15px;
+    }
 }
 
 .tranding-slide {
@@ -361,7 +377,7 @@ body {
 
 }
 
-@media (max-width:550px) {
+@media (max-width:600px) {
     .tranding-slide {
         width: 28rem !important;
         height: 36rem !important;
