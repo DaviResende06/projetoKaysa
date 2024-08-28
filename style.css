@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -389,6 +390,7 @@ body {
 .section-heading {
   font-size: 3rem;
   color: #102947;
+  font-family: "Nanum Gothic", sans-serif;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -664,7 +666,7 @@ body {
   font-size: 45px;
   margin-bottom: 25px;
   padding-top: 15px;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -697,7 +699,7 @@ body {
   line-height: 110%;
 }
 .services-etapa .titulo-etapa {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 45px;
