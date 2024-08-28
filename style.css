@@ -404,7 +404,6 @@ body {
   color: black;
   font-size: 18px;
   padding-bottom: 30px;
-  border-bottom: 1px solid white;
 }
 
 @media (max-width: 450px) {
@@ -492,6 +491,7 @@ body {
   border-radius: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid white;
 }
 
 .tranding-slide .tranding-slide-content {
