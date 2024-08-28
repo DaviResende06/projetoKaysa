@@ -380,6 +380,7 @@ body {
 
 .container {
   max-width: 124rem;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -491,8 +492,6 @@ body {
   border-radius: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
 .tranding-slide .tranding-slide-content {
@@ -621,7 +620,7 @@ body {
 .tranding-slide-img img {
   width: 100%;
   height: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   /* Sombra suave */
   border-radius: 10px;
   /* Opcional: para bordas arredondadas */

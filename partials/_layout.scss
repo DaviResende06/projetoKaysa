@@ -277,7 +277,7 @@ body {
 
 .container {
     max-width: 124rem;
-    // padding: 0 1rem;
+    padding: 0 1rem; //
     margin: 0 auto;
 }
 
@@ -300,7 +300,6 @@ body {
 .text-lentesEmResina {
     text-align: center;
     padding: 0;
-    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: black;
     font-size: 18px;
     padding-bottom: 30px;
@@ -320,9 +319,6 @@ body {
 #tranding {
     padding: 1rem 0;
     background-color: #d2bfb8;
-    // background-color: white;
-    // border-top: 2px solid white;
-    // border-bottom: 2px solid white;
 }
 
 @media (max-width:1440px) {
@@ -372,7 +368,6 @@ body {
     height: 42rem;
     position: relative;
     margin-right: 2rem;
-
 }
 
 @media (max-width:600px) {
@@ -416,8 +411,8 @@ body {
     height: 42rem;
     border-radius: 2rem;
     object-fit: cover;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tranding-slide .tranding-slide-content {
@@ -459,7 +454,7 @@ body {
 
 .tranding-slider-control {
     position: relative;
-    // top: 10px; // aqui se resolve o problema as setas descendo
+    // top: 10px;          // aqui se resolve o problema as setas descendo
     bottom: 2rem;
     display: flex;
     align-items: center;
@@ -558,7 +553,7 @@ body {
 .tranding-slide-img img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
     border-radius: 10px;
     /* Opcional: para bordas arredondadas */
@@ -601,7 +596,6 @@ body {
         padding: 0 1rem;
         margin: 0 auto;
     }
-
 }
 
 
