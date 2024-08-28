@@ -403,7 +403,7 @@ body {
   padding: 0;
   color: black;
   font-size: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 450px) {
