@@ -491,7 +491,7 @@ body {
   border-radius: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid white;
+  border: 1px solid #d2bfb8;
 }
 
 .tranding-slide .tranding-slide-content {
