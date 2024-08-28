@@ -387,6 +387,18 @@ body {
     }
 }
 
+@media (max-width:400px) {
+    .tranding-slide {
+        width: 24rem !important;
+        height: 33rem !important;
+    }
+
+    .tranding-slide .tranding-slide-img img {
+        width: 24rem !important;
+        height: 33rem !important;
+    }
+}
+
 @media (max-width:350px) {
     .tranding-slide {
         width: 24rem !important;
