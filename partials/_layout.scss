@@ -73,6 +73,8 @@ i {
     color: white;
     background-color: transparent;
     transition: background-color 0.8s;
+    // box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+
 }
 
 .header-button:hover {
@@ -970,7 +972,9 @@ body {
     border-radius: 3px;
     // border-radius: 3px;
     // border-radius: 3px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .about-description a:hover {
