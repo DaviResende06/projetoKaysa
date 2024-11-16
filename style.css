@@ -11,328 +11,11 @@
   outline: 0;
 }
 
-header {
-  width: 100%;
-}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////Primeira parte(Imagem principal e agendamento /////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-i {
-  color: #fff;
-}
-
-.header-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.header-icons a:hover i {
-  animation: translateY 0.8s infinite alternate;
-  color: #d34040;
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-  to {
-    transform: translateY(-8px) scale(1.1);
-  }
-}
-.header-button {
-  border: 1px solid #fff;
-  padding: 8px 24px;
-  border-radius: 6px;
-  color: #fff;
-  background-color: transparent;
-  transition: background-color 0.8s;
-}
-
-.header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
-}
-
-.header-logo {
-  display: flex;
-  visibility: hidden;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .header-content {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-tracks: center;
-  }
-  .header-content i {
-    margin-top: 16px;
-    font-size: 34px;
-  }
-  .header-logo img {
-    width: 160px;
-    margin-top: 46px;
-  }
-  .header-button {
-    display: none;
-  }
-}
-.hero {
-  color: #fff;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  position: relative;
-  z-index: 1;
-}
-.hero h1 {
-  text-align: center;
-  line-height: 150%;
-  max-height: 940px;
-  font-size: 48px;
-}
-.hero p {
-  text-align: center;
-  margin: 14px 0;
-}
-
-.button-contact {
-  padding: 14px 28px;
-  color: #fff;
-  background-color: #d94140;
-  border: 0;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 14px 0;
-  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
-}
-
-.button-contact:hover {
-  animation: scaleButton 0.8s alternate infinite;
-}
-
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.07);
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero {
-    min-height: 60vh;
-  }
-  .hero h1 {
-    font-size: 34px;
-    padding: 0 14px;
-    width: 100%;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 29px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .hero h1 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 310px) {
-  .hero h1 {
-    font-size: 25px;
-  }
-}
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 0px;
-}
-
-.bg-home {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  /* ou altura desejada */
-}
-
-.bg-home img.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-  opacity: 0.6;
-}
-
-header {
-  width: 100%;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-i {
-  color: white;
-}
-
-.header-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.header-icons a:hover i {
-  animation: translateY 0.8s infinite alternate;
-  color: #d34040;
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-  to {
-    transform: translateY(-8px) scale(1.1);
-  }
-}
-.header-button {
-  border: 1px solid white;
-  padding: 8px 24px;
-  border-radius: 6px;
-  color: white;
-  background-color: transparent;
-  transition: background-color 0.8s;
-}
-
-.header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
-}
-
-.header-logo {
-  display: flex;
-  visibility: hidden;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .header-content {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-tracks: center;
-  }
-  .header-content i {
-    margin-top: 16px;
-    font-size: 34px;
-  }
-  .header-logo img {
-    width: 160px;
-    margin-top: 46px;
-  }
-  .header-button {
-    display: none;
-    background-color: red;
-  }
-}
-.hero {
-  color: white;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero h1 {
-  text-align: center;
-  line-height: 150%;
-  max-height: 940px;
-  font-size: 48px;
-}
-
-.hero p {
-  text-align: center;
-  margin: 14px 0;
-}
-
-.button-contact {
-  padding: 14px 28px;
-  color: white;
-  background-color: rgb(223, 53, 53);
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 14px 0;
-}
-
-.button-contact:hover {
-  animation: scaleButton 0.8s alternate infinite;
-}
-
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.07);
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero {
-    min-height: 60vh;
-  }
-  .hero h1 {
-    font-size: 34px;
-    padding: 0 14px;
-    width: 100%;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 29px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .hero h1 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 310px) {
-  .hero h1 {
-    font-size: 25px;
-  }
-}
+/* Reset e configurações gerais */
 *,
 *::before,
 *::after {
@@ -355,25 +38,6 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
-
 body {
   font-size: 1.6rem;
   background: var(--bg);
@@ -385,9 +49,107 @@ body {
   margin: 0 auto;
 }
 
+/* Configuração do background */
+.bg-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-home img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Configuração do header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Move os elementos para o final do header */
+  height: 100%;
+  width: 100%;
+}
+
+/* Configuração da seção hero */
+.hero.container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero.container h1 {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.hero.container p {
+  margin: 14px 0 25px;
+  font-size: 18px;
+}
+
+.button-contact {
+  padding: 14px 28px;
+  color: white;
+  background-color: rgb(223, 53, 53);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+/* Animação do botão */
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .hero.container h1 {
+    font-size: 34px;
+    padding: 0 14px;
+  }
+
+  .hero.container p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero.container h1 {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .hero.container h1 {
+    font-size: 26px;
+  }
+}
+
 .text-center {
   text-align: center;
 }
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////// SERVICES (Carrossel de imagens)///////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 
 .section-heading {
   font-size: 3rem;
@@ -659,6 +421,19 @@ body {
     margin: 0 auto;
   }
 }
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+/* -----------------------------------------------
+  Estilos gerais
+----------------------------------------------- */
+
+/* Estilos para o conteúdo da seção de facetas em resina */
 .services {
   background-color: #d2bfb8;
   color: #232224;
@@ -666,65 +441,68 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  padding-top: 10px;
-  padding: 0px 15px 0px 15px;
+  padding: 5px 15px 0px 15px;
 }
 
+/* Título da seção de benefícios */
 .services-content .tituloBeneficios {
   text-align: center;
   font-size: 45px;
   margin-bottom: 25px;
   padding-top: 15px;
   font-family: "Nanum Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #102947;
   line-height: 110%;
 }
 
+/* Parágrafos dentro de services-content */
 .services-content p {
-  line-height: 135%;
-  margin-bottom: 0px;
   text-align: center;
   max-width: 900px;
   font-size: 19px;
   font-weight: 500;
   line-height: 120%;
+  margin-bottom: 0;
 }
 
+/* Estilos para etapas dentro de services */
 .services-etapa {
   color: #232224;
-  margin: auto auto;
+  margin: auto;
   max-width: 900px;
-  /* Use max-width em vez de width para que o contêiner possa diminuir de tamanho em telas menores */
   font-size: 19px;
-  padding: 0px;
+  padding: 0;
 }
+
 .services-etapa p {
   margin-bottom: 15px;
   text-align: justify;
-  /* Alinha o texto justificado para melhorar a aparência */
   line-height: 110%;
 }
+
+/* Título das etapas */
 .services-etapa .titulo-etapa {
   font-family: "Nanum Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-size: 45px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
-  /* Adicione um espaço entre o título e o primeiro parágrafo */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #102947;
   line-height: 120%;
 }
+
+/* Estilos para o título da última etapa */
 .services-etapa .titulo-etapa-end {
   margin-bottom: 30px;
 }
 
+/* -----------------------------------------------
+  Responsividade
+----------------------------------------------- */
+
+/* Para telas menores que 678px */
 @media (max-width: 678px) {
   .services-content .tituloBeneficios {
     font-size: 37px;
@@ -739,6 +517,8 @@ body {
     font-size: 40px;
   }
 }
+
+/* Para telas menores que 360px */
 @media (max-width: 360px) {
   .services-content .tituloBeneficios {
     font-size: 30px;
@@ -750,25 +530,33 @@ body {
     font-size: 35px;
   }
 }
+
+/* -----------------------------------------------
+  Estilos para o carrossel e modal
+----------------------------------------------- */
+
+/* Contêiner do carrossel */
 .container-etapa {
   align-items: center;
 }
 
+/* Estilos gerais para o carrossel */
 .haircuts .haircuts {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2%;
-  padding: 0px 34px 0px 34px;
+  padding: 0 34px;
 }
 
+/* Estilos para cada slide de carrossel */
 .haircut {
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -789,7 +577,11 @@ body {
   gap: 3%;
 }
 
-/* Modal Styles */
+/* -----------------------------------------------
+  Modal Styles
+----------------------------------------------- */
+
+/* Estilo geral do modal */
 .modal {
   display: none;
   position: fixed;
@@ -802,25 +594,20 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Estilos para o conteúdo do modal */
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
   position: relative;
-  /* Adicione esta linha */
   top: 50%;
-  /* Adicione esta linha */
   transform: translateY(-50%);
-  /* Adicione esta linha */
-}
-
-.modal-content,
-.close {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
+/* Animação de zoom do modal */
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -829,6 +616,8 @@ body {
     transform: scale(1);
   }
 }
+
+/* Estilo do botão de fechar */
 .close {
   position: absolute;
   top: 15px;
@@ -846,11 +635,19 @@ body {
   cursor: pointer;
 }
 
+/* Responsividade do modal */
 @media (max-width: 450px) {
   .modal-content {
     width: 100%;
   }
 }
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -1117,6 +914,74 @@ body {
   box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
 }
+
+/* Container fixado */
+.social-links-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* Lista de links */
+.social-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+/* Cada item da lista */
+.social-link-item {
+  display: block;
+}
+
+/* Links */
+.social-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ícones padrão */
+.social-link-icon {
+  width: 60px; /* Tamanho base */
+  height: 60px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) { /* Para tablets ou telas menores */
+  .social-link-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-links-container {
+    bottom: 15px; /* Ajuste de posicionamento */
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) { /* Para celulares */
+  .social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-links-list {
+    gap: 5px; /* Reduz o espaçamento entre os itens */
+  }
+
+  .social-links-container {
+    bottom: 10px; /* Ajuste de posicionamento */
+    right: 10px;
+  }
+}
+
+
 
 @media (max-width: 470px) {
   .sobre-a-clinica {

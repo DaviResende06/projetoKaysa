@@ -1,5 +1,3 @@
-
-
 var TrandingSlider = new Swiper('.tranding-slider', {
     effect: 'coverflow',
     grabCursor: true,
@@ -22,38 +20,25 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
 });
 
-
-
-
-
-
-
-
-
-
-
 // Seleciona o modal
 var modal = document.getElementById('myModal');
 
 // Seleciona a imagem do modal
 var modalImg = document.getElementById("img01");
 
-// Seleciona todas as imagens
-var imgs = document.querySelectorAll('.haircut img');
+// Seleciona o elemento de fechar o modal
+var span = document.getElementsByClassName("close")[0];
 
-// Adiciona o evento de clique para todas as imagens
-imgs.forEach(img => {
-    img.onclick = function () {
+// Adiciona o evento de clique para todas as imagens usando delegação de evento
+document.querySelector('.haircut').addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() === 'img') {
         // Verifica a largura da janela
         if (window.innerWidth <= 768) {
             modal.style.display = "block";
-            modalImg.src = this.src;
+            modalImg.src = event.target.src;
         }
     }
 });
-
-// Seleciona o elemento de fechar o modal
-var span = document.getElementsByClassName("close")[0];
 
 // Quando o usuário clicar no "x", fecha o modal
 span.onclick = function () {
@@ -62,7 +47,14 @@ span.onclick = function () {
 
 // Quando o usuário clicar fora da imagem, fecha o modal
 modal.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == span) {
         modal.style.display = "none";
     }
 }
+
+// Adiciona o fechamento do modal ao pressionar a tecla "Esc"
+window.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
