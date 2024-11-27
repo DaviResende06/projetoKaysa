@@ -427,246 +427,107 @@ header {
 /* ///////////// (Benefícios e Etapas) //////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Estilos para o conteúdo da seção de facetas em resina */
+/* Estilos gerais da seção */
 .services {
-  background-color: #d2bfb8;
+  background-color: #f4efe9;
+  padding: 40px 15px;
   color: #232224;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 15px 0px 15px;
 }
 
-/* Título da seção de benefícios */
-.services-content .tituloBeneficios {
+.tituloBeneficios,
+.titulo-etapa {
   text-align: center;
-  font-size: 45px;
-  margin-bottom: 25px;
-  padding-top: 15px;
+  font-size: 40px;
   font-family: "Nanum Gothic", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #102947;
-  line-height: 110%;
-}
-
-/* Parágrafos dentro de services-content */
-.services-content p {
-  text-align: center;
-  max-width: 900px;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 120%;
-  margin-bottom: 0;
-}
-
-/* Estilos para etapas dentro de services */
-.services-etapa {
-  color: #232224;
-  margin: auto;
-  max-width: 900px;
-  font-size: 19px;
-  padding: 0;
-}
-
-.services-etapa p {
-  margin-bottom: 15px;
-  text-align: justify;
-  line-height: 110%;
-}
-
-/* Título das etapas */
-.services-etapa .titulo-etapa {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 45px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #102947;
-  line-height: 120%;
-}
-
-/* Estilos para o título da última etapa */
-.services-etapa .titulo-etapa-end {
   margin-bottom: 30px;
 }
 
-/* Para telas menores que 678px */
-@media (max-width: 678px) {
-  .services-content .tituloBeneficios {
-    font-size: 37px;
-  }
-  .services-content p {
-    font-size: 17px;
-  }
-  .services-etapa {
-    font-size: 17px;
-  }
-  .titulo-etapa b {
-    font-size: 40px;
-  }
-}
-
-/* Para telas menores que 360px */
-@media (max-width: 360px) {
-  .services-content .tituloBeneficios {
-    font-size: 30px;
-  }
-  .services-content p {
-    font-size: 17px;
-  }
-  .titulo-etapa b {
-    font-size: 35px;
-  }
-}
-
-/* Contêiner do carrossel */
-.container-etapa {
-  align-items: center;
-}
-
-/* Estilos gerais para o carrossel */
-.haircuts .haircuts {
+/* Estilos dos cards de benefícios */
+.benefits-grid {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
-  gap: 2%;
-  padding: 0 34px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/* Estilos para cada slide de carrossel */
-.haircut {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.card {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animação */
 }
 
-.haircut img {
-  width: 100%;
-  max-width: 354px;
-  transition: transform 0.2s;
-  cursor: pointer;
+.card:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  cursor: default;
 }
 
-.haircut img:hover {
-  transform: scale(1.2);
-  z-index: 1;
+.card h3 {
+  font-size: 22px;
+  color: #102947;
+  margin-bottom: 10px;
 }
 
-.haircut-alinhamento {
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos das etapas */
+.etapas .steps-grid {
   display: flex;
-  gap: 3%;
-}
-/* Estilo geral do modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Estilos para o conteúdo do modal */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.step-card {
+  background-color: #ffffff;
+  border-left: 5px solid #d2bfb8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease; /* Animação */
 }
 
-/* Animação de zoom do modal */
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+.step-card:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  cursor: default;
 }
 
-/* Estilo do botão de fechar */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: bold;
-  transition: 0.3s;
+.step-card h3 {
+  font-size: 22px;
+  color: #102947;
+  margin-bottom: 10px;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbbbbb;
-  text-decoration: none;
-  cursor: pointer;
+.step-card p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* Responsividade do modal */
-@media (max-width: 450px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
-
-/* ///////////////////////////////////////////////////////////////////////////////////// */
-/* //////////sobre a Dra. Kaysa//////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 768px) {
-  .about-content {
+/* Responsividade */
+@media (max-width: 768px) {
+  .benefits-grid,
+  .steps-grid {
     flex-direction: column;
-  }
-  .haircuts {
-    display: flex;
-  }
-  .services-etapa .titulo-etapa {
-    font-size: 39px;
-  }
-  .services-content h2 {
-    font-size: 45px;
+    align-items: center;
   }
 }
-@media screen and (max-width: 750px) {
-  .haircuts {
-    flex-direction: column;
-  }
-  .haircut {
-    margin-bottom: 3%;
-  }
-}
-@media screen and (max-width: 580px) {
-  .haircuts .haircut {
-    max-height: 310px;
-    max-width: 2600px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .haircuts .haircut {
-    max-height: 320px;
-    max-width: 280px;
-  }
-}
-@media (max-width: 500px) {
-  .haircuts {
-    padding: 0%;
-  }
-}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////// Sobre a Dra. Kaysa ///////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* Estilos gerais */
 .espacoAbaixoDeServices {
   visibility: hidden;
   padding: 20px;
@@ -683,8 +544,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -698,35 +558,38 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px; /* Ajustado para melhor espaçamento */
-  padding: 0px 50px 70px 50px;
+  gap: 30px;
+  padding: 10px;
+  width: 100vw;
 }
 
 .about-image {
-  flex: 1; /* Proporção igual para a imagem */
+  flex: 1;
   display: flex;
   justify-content: center;
+  width: 40%;
 }
 
 .about-image img {
-  max-width: 100%;
-  max-height: 700px;
+  max-width: 60%;
+  max-height: 100%;
   border-radius: 10px;
   box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .about-description {
-  flex: 1; /* Proporção igual para o texto */
-  text-align: center;
+  flex: 1;
+  /* text-align: center; */
+  padding: 10px 200px 10px 10px;
+  width: 60%;
 }
 
 .about-description h2 {
   font-size: 55px;
   margin-top: 20px;
   margin-bottom: 30px;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  text-align: center;
+  text-decoration: solid;
+  text-align: left;
   font-family: "Didact Gothic", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -755,7 +618,7 @@ header {
   font-size: 19px;
 }
 
-/* Responsividade */
+/* Responsividade geral */
 @media (max-width: 1050px) {
   .about-content {
     padding: 0px 100px 20px 30px;
@@ -766,14 +629,15 @@ header {
   .about-description p {
     font-size: 18px;
   }
+  .about-description {
+    padding: 10px 50px 10px 10px;
+  }
 }
+
 @media (max-width: 768px) {
   .about-content {
     padding: 0px 40px 50px 40px;
-  }
-  .about-content img {
-    width: 390px;
-    height: 600px;
+    flex-direction: column;
   }
   .about-description h2 {
     font-size: 50px;
@@ -781,24 +645,29 @@ header {
   .about-description p {
     font-size: 18px;
   }
+  .about-description {
+    padding: 10px 40px 10px 10px;
+  }
 }
+
 @media (max-width: 590px) {
   .about-description h2 {
     font-size: 45px;
   }
+  .about-description {
+    padding: 10px 20px 10px 10px;
+  }
 }
+
 @media (max-width: 540px) {
   .about-description h2 {
     font-size: 42px;
   }
 }
+
 @media (max-width: 530px) {
   .about-content {
     padding: 0px 30px 50px 30px;
-  }
-  .about-content img {
-    width: 340px;
-    height: 520px;
   }
   .about-description h2 {
     font-size: 46px;
@@ -806,7 +675,18 @@ header {
   .about-description p {
     font-size: 18px;
   }
+  .about-description {
+    padding: 10px 10px 10px 10px;
+  }
 }
+
+@media (max-width: 480px) {
+  .about-image img {
+    width: 90%;
+    height: auto;
+  }
+}
+
 @media (max-width: 440px) {
   .about-content p {
     line-height: 120%;
@@ -818,6 +698,7 @@ header {
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 415px) {
   .about-content p {
     line-height: 120%;
@@ -829,6 +710,7 @@ header {
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 370px) {
   .about-content img {
     width: 300px;
@@ -841,6 +723,48 @@ header {
     font-size: 43px;
   }
 }
+
+/* Haircuts (estilos específicos) */
+@media screen and (max-width: 768px) {
+  .haircuts {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-etapa .titulo-etapa {
+    font-size: 39px;
+  }
+  .services-content h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .haircut {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .haircuts .haircut {
+    max-height: 310px;
+    max-width: 2600px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .haircuts .haircut {
+    max-height: 320px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  .haircuts {
+    padding: 0%;
+  }
+}
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
