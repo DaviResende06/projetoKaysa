@@ -712,11 +712,11 @@ header {
 }
 
 @media (max-width: 370px) {
-  .about-content img {
+  /* .about-content img {
     margin-top: 20px;
     width: 300px;
     height: 480px;
-  }
+  } */
   .about-description h2 {
     line-height: 115%;
     margin-top: 15px;
