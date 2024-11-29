@@ -1004,6 +1004,9 @@ header {
   width: 230px;
 }
 
+footer A{
+color: rgb(156, 145, 84);
+}
 .footer p {
   text-align: center;
   width: 90%;
@@ -1013,6 +1016,7 @@ header {
 .footer-icons {
   display: flex;
   gap: 30px;
+  color: inherit;
 }
 
 .localizacao h2 {
